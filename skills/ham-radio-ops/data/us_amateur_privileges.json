@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-11-18",
+  "sources": [
+    "47 CFR 97.301 Authorized frequency bands: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97/subpart-D/section-97.301",
+    "47 CFR 97.305 Authorized emission types: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97/subpart-D/section-97.305",
+    "47 CFR 97.313 Transmitter power standards: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97/subpart-D/section-97.313"
+  ],
+  "scope": "ITU Region 2, contiguous United States. Alaska, Hawaii, territories, and stations near certain government sites have exceptions not modeled here. Bands above 10.5 GHz are not modeled.",
+  "units": "MHz",
+  "vhf_uhf_ranges": [[50.0, 54.0], [144.0, 148.0], [219.0, 220.0], [222.0, 225.0], [420.0, 450.0], [902.0, 928.0], [1240.0, 1300.0], [2300.0, 2310.0], [2390.0, 2450.0], [5650.0, 5925.0], [10000.0, 10500.0]],
+  "class_ranges": {
+    "extra": [[0.1357, 0.1378], [0.472, 0.479], [1.8, 2.0], [3.5, 4.0], [7.0, 7.3], [10.1, 10.15], [14.0, 14.35], [18.068, 18.168], [21.0, 21.45], [24.89, 24.99], [28.0, 29.7]],
+    "advanced": [[0.1357, 0.1378], [0.472, 0.479], [1.8, 2.0], [3.525, 3.6], [3.7, 4.0], [7.025, 7.3], [10.1, 10.15], [14.025, 14.15], [14.175, 14.35], [18.068, 18.168], [21.025, 21.2], [21.225, 21.45], [24.89, 24.99], [28.0, 29.7]],
+    "general": [[0.1357, 0.1378], [0.472, 0.479], [1.8, 2.0], [3.525, 3.6], [3.8, 4.0], [7.025, 7.125], [7.175, 7.3], [10.1, 10.15], [14.025, 14.15], [14.225, 14.35], [18.068, 18.168], [21.025, 21.2], [21.275, 21.45], [24.89, 24.99], [28.0, 29.7]],
+    "technician": [[3.525, 3.6], [7.025, 7.125], [21.025, 21.2], [28.0, 28.5]],
+    "novice": [[3.525, 3.6], [7.025, 7.125], [21.025, 21.2], [28.0, 28.5], [222.0, 225.0], [1270.0, 1295.0]]
+  },
+  "vhf_uhf_classes": ["extra", "advanced", "general", "technician"],
+  "sixty_meters": {
+    "classes": ["extra", "advanced", "general"],
+    "channels_center_mhz": [5.332, 5.348, 5.373, 5.405],
+    "channel_half_width_mhz": 0.0014,
+    "channel_power": "100 W ERP (PEP x antenna gain relative to a half-wave dipole)",
+    "segment": [5.3515, 5.3665],
+    "segment_power": "9.15 W ERP",
+    "modes": ["cw", "phone", "data"],
+    "note": "Phone is upper sideband. Secondary allocation: yield to primary government users. See 97.303(h) and 97.307(f)(14)."
+  },
+  "mode_segments": [
+    {"band": "2200 m", "lo": 0.1357, "hi": 0.1378, "modes": ["cw", "data"], "note": "Prior notification to UTC required (97.303(g)); 1 W EIRP. Other emissions may be permitted; check 97.305."},
+    {"band": "630 m", "lo": 0.472, "hi": 0.479, "modes": ["cw", "data"], "note": "Prior notification to UTC required (97.303(g)); 5 W EIRP. Other emissions may be permitted; check 97.305."},
+    {"band": "160 m", "lo": 1.8, "hi": 2.0, "modes": ["cw", "data", "phone", "image"]},
+    {"band": "80 m", "lo": 3.5, "hi": 3.6, "modes": ["cw", "data"]},
+    {"band": "75 m", "lo": 3.6, "hi": 4.0, "modes": ["cw", "phone", "image"]},
+    {"band": "40 m", "lo": 7.0, "hi": 7.125, "modes": ["cw", "data"]},
+    {"band": "40 m", "lo": 7.125, "hi": 7.3, "modes": ["cw", "phone", "image"]},
+    {"band": "30 m", "lo": 10.1, "hi": 10.15, "modes": ["cw", "data"]},
+    {"band": "20 m", "lo": 14.0, "hi": 14.15, "modes": ["cw", "data"]},
+    {"band": "20 m", "lo": 14.15, "hi": 14.35, "modes": ["cw", "phone", "image"]},
+    {"band": "17 m", "lo": 18.068, "hi": 18.11, "modes": ["cw", "data"]},
+    {"band": "17 m", "lo": 18.11, "hi": 18.168, "modes": ["cw", "phone", "image"]},
+    {"band": "15 m", "lo": 21.0, "hi": 21.2, "modes": ["cw", "data"]},
+    {"band": "15 m", "lo": 21.2, "hi": 21.45, "modes": ["cw", "phone", "image"]},
+    {"band": "12 m", "lo": 24.89, "hi": 24.93, "modes": ["cw", "data"]},
+    {"band": "12 m", "lo": 24.93, "hi": 24.99, "modes": ["cw", "phone", "image"]},
+    {"band": "10 m", "lo": 28.0, "hi": 28.3, "modes": ["cw", "data"]},
+    {"band": "10 m", "lo": 28.3, "hi": 29.7, "modes": ["cw", "phone", "image"]},
+    {"band": "6 m", "lo": 50.0, "hi": 50.1, "modes": ["cw"]},
+    {"band": "6 m", "lo": 50.1, "hi": 54.0, "modes": ["cw", "phone", "image", "data"]},
+    {"band": "2 m", "lo": 144.0, "hi": 144.1, "modes": ["cw"]},
+    {"band": "2 m", "lo": 144.1, "hi": 148.0, "modes": ["cw", "phone", "image", "data"]},
+    {"band": "1.25 m", "lo": 219.0, "hi": 220.0, "modes": ["cw", "data"], "note": "Point-to-point fixed digital message forwarding only; prior notification required (97.303(j)). 50 W PEP."},
+    {"band": "1.25 m", "lo": 222.0, "hi": 225.0, "modes": ["cw", "phone", "image", "data"]},
+    {"band": "70 cm", "lo": 420.0, "hi": 450.0, "modes": ["cw", "phone", "image", "data"], "note": "Power and location limits apply in some areas (97.313(f), 97.303)."},
+    {"band": "33 cm", "lo": 902.0, "hi": 928.0, "modes": ["cw", "phone", "image", "data"], "note": "Secondary allocation; location limits apply (97.303, 97.313(g))."},
+    {"band": "23 cm", "lo": 1240.0, "hi": 1300.0, "modes": ["cw", "phone", "image", "data"]},
+    {"band": "13 cm", "lo": 2300.0, "hi": 2310.0, "modes": ["cw", "phone", "image", "data"]},
+    {"band": "13 cm", "lo": 2390.0, "hi": 2450.0, "modes": ["cw", "phone", "image", "data"]},
+    {"band": "5 cm", "lo": 5650.0, "hi": 5925.0, "modes": ["cw", "phone", "image", "data"]},
+    {"band": "3 cm", "lo": 10000.0, "hi": 10500.0, "modes": ["cw", "phone", "image", "data"]}
+  ],
+  "novice_technician_hf": {
+    "cw_only": [[3.525, 3.6], [7.025, 7.125], [21.025, 21.2]],
+    "ten_meters": [
+      {"lo": 28.0, "hi": 28.3, "modes": ["cw", "data"]},
+      {"lo": 28.3, "hi": 28.5, "modes": ["cw", "phone"], "note": "Phone is single sideband voice only (97.307(f)(10))."}
+    ],
+    "power": "200 W PEP"
+  },
+  "power": {
+    "default": "1,500 W PEP maximum; always the minimum power necessary (97.313(a),(b))",
+    "thirty_meters": "200 W PEP",
+    "novice_222": "25 W PEP",
+    "novice_1270": "5 W PEP"
+  }
+}

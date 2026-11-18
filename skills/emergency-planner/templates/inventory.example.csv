@@ -1,0 +1,11 @@
+item,category,quantity,unit,calories_total,water_gallons,expires,location,condition,confidence,verified,notes
+Bottled water 1 gal jugs,water,6,jug,,6,2027-08-01,pantry floor,sealed,high,yes,
+Canned black beans 15 oz,food,8,can,3080,,2028-03-01,pantry shelf 2,good,medium,no,count from photo
+Peanut butter 16 oz,food,2,jar,5600,,2027-05-15,pantry shelf 1,good,high,yes,
+Rolled oats 42 oz,food,1,canister,4500,,2027-11-01,pantry shelf 1,opened,high,yes,
+Unscented bleach 8.25%,sanitation,1,bottle,,,2027-02-01,laundry room,good,high,yes,check date: bleach weakens over time
+LED flashlight,light,2,each,,,,kitchen drawer,working,high,yes,
+AA batteries,power,16,each,,,2032-01-01,kitchen drawer,sealed,low,no,could be AAA
+First aid kit,medical,1,kit,,,,hall closet,unknown,medium,no,contents not checked
+NOAA weather radio (hand crank),comms,1,each,,,,hall closet,working,high,yes,
+Battery CO alarm,safety,1,each,,,,hallway,working,high,yes,
